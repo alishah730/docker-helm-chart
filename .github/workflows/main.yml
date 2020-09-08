@@ -14,7 +14,7 @@ jobs:
     - uses: anchore/scan-action@v1
       with:
         image-reference: "localbuild/testimage:latest"
-        dockerfile-path: "Dockerfile"
+        dockerfile-path: "./docker-gradle/Dockerfile"
         fail-build: true
         acs-report-enable: true
         #acs-report-severity-cutoff: "Medium"
